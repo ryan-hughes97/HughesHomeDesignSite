@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4b6f36aabf.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>ARH Designs|Home</title>
+</head>
+<body id="home">
+  <!--Navbar and Head Title-->
+  <nav id="navbar" class="bg-dark">
+    <div>
+      <h1><span class="text-primary">ARH</span> Designs <i class="fas fa-home"></i></h1>
+      <h5>Addition & Remodeling Home Designs</h5>
+    </div>
+    <div>
+      <ul>
+        <li><a class="btn" href="#home">Home</a></li>
+        <li><a class="btn" href="#services">Services</a></li>
+        <li><a class="btn" href="#about">About</a></li>
+        <li><a class="btn" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Showcase-->
+  <header id="showcase">
+    <!--<img src="" alt=""> -->
+  </header>
+
+
+  <!--Section: Services-->
+  <section id="services">
+    <div class="container">
+      <h1>Our<span class="text-primary"> Services</span></h1>
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-hammer fa-2x"></i>
+          <div>
+            <h3>Home Remodeling</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates repudiandae quo perferendis fugiat quas quidem.</p>
+          </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-plus fa-2x"></i>
+            <div>
+              <h3>Home Addition</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates repudiandae quo perferendis fugiat quas quidem.</p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-user-friends fa-2x"></i>
+            <div>
+              <h3>Free Consultation</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates repudiandae quo perferendis fugiat quas quidem.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!--Section: About-->
+  <section id="about">
+    <div class="about-img"></div>
+    <div class="bg-dark">
+      <h2>About</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptatibus ratione. Itaque esse ipsa autem excepturi consequatur. Placeat sequi veritatis, veniam vitae cumque inventore id consectetur autem commodi mollitia voluptatem ullam reiciendis, magni aperiam nulla porro ipsa enim harum aliquam recusandae quibusdam ad quae officiis obcaecati. Quidem similique natus maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, impedit alias quaerat voluptas molestias reiciendis sequi optio quidem numquam, eum excepturi a laborum ad vero deserunt quisquam perspiciatis earum provident nisi veritatis laudantium dolores harum? Nobis aperiam eaque ex delectus autem, reiciendis quam eos voluptate, velit dicta expedita repudiandae quae!</p>
+    </div>
+  </section>
+
+  <!--Section: Contact-->
+  <section id="contact">
+    <div class="contact-form">
+      <h2><span class="text-primary">Contact</span> Us</h2>
+      <p>Please fill out the form below and we'll contact you as soon as possible!</p>
+      <form action="action.php">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" placeholder="Enter your phone number">
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn-submit">
+      </form>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer>
+    <p>ARH Designs &copy; 2020</p>
+  </footer>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script>
+    //Smooth Scrolling
+    $('.btn').on('click', function(event) {
+      if (this.hash !== '') {
+        event.preventDefault();
+        const hash = this.hash;
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top -80
+          },
+          800
+        );
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.2em;
+}
+
+a{
+  text-decoration:none;
+}
+
+p{
+  margin:0.75rem 0;
+}
+
+/* Utility */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding: 0 2rem;
+  overflow:hidden;
+}
+
+.text-primary{
+  color:rgb(63, 151, 41)
+}
+
+.bg-primary{
+  background:rgb(63, 151, 41);
+  color:#fff;
+}
+
+.bg-dark{
+  background:#333;
+  color:#fff;
+}
+
+.py-1{padding:1.5rem 0;}
+.py-2{padding:2rem 0;}
+.py-3{padding:3rem 0;}
+
+.p-1{padding:1.5rem;}
+.p-2{padding:2rem;}
+.p-3{padding:3rem;}
+
+.btn{
+  display:inline-block;
+  color:#fff;
+  background:#fff;
+  padding:0.5rem 2rem;
+  border:none;
+  border-radius:5px;
+  transition: .5s;
+}
+
+.btn:hover{
+  background:#7ab436;
+}
+
+.btn-submit{
+  display:inline-block;
+  color:#333;
+  background:#7ab436;
+  padding:0.5rem 2rem;
+  border:none;
+  border-radius:5px;
+  transition: .5s;
+}
+
+.btn-submit:hover{
+  background:rgb(63, 151, 41);
+}
+
+/* Navbar */
+#navbar{
+  display:flex;
+  position:sticky;
+  top:0; /*this keeps navbar always at top of screen */
+  background:#fff;
+  color:#333;
+  justify-content:space-between;
+  z-index:1; /*always puts this in front of everything so navbar will be on top*/
+  padding:1rem;
+}
+
+#navbar ul{
+  display:flex;
+  align-items:center;
+  list-style:none;
+}
+
+#navbar ul li a{
+  color:#333;
+  padding:0.75rem;
+  margin:0 0.25rem;
+}
+
+#navbar h1{
+  padding-bottom:5px;
+}
+
+i {
+  color: #7ab436;
+  transition: .5s;
+}
+
+i:hover {
+  transform: rotate(25deg);
+}
+
+/* Showcase */
+#showcase{
+  background:#333 url('../img/showcase.jpg') no-repeat center center/cover;
+  height:100vh;
+  color:#fff;
+  position:relative;
+}
+
+/* Section: What We Do */
+#services h1{
+  text-align:center;
+  margin:1.7rem 0 1rem 0;
+  font-size:2rem;
+}
+
+#services .items{
+  display:flex;
+  padding:1rem;
+}
+
+#services .items .item{
+  flex:1;
+  text-align:center;
+  padding:1rem;
+  margin:0 2rem;
+  border:1px solid #333;
+  border-radius:5px;
+}
+
+#services .items .item i{
+  color:rgb(63, 151, 41);
+  padding:1rem;
+  border-radius:50%;
+  margin-bottom:1rem;
+}
+
+#about{
+  display:flex;
+  margin-top:1rem;
+}
+
+#about div{
+  flex:1;
+}
+
+#about .about-img{
+  background:url('../img/architect.jpg') no-repeat center center/cover;
+}
+
+#about h2{
+  text-align:center;
+  padding-top:1.5rem;
+}
+
+#about p{
+  padding:0 1.5rem 1rem 1.5rem;
+}
+
+#contact{
+  display:flex;
+  justify-content:center;
+}
+
+#contact h2{
+  font-size:2rem;
+}
+
+#contact h2, #contact p{
+  text-align:center;
+  margin:0.75rem;
+  padding:0.5rem;
+}
+
+#contact .contact-form .form-group{
+  margin:0.75rem;
+}
+
+#contact .contact-form label{
+  display:block;
+}
+
+#contact .contact-form input, #contact .contact-form textarea{
+  width:100%;
+  padding:0.5rem;
+}
+
+footer{
+  text-align:center;
+  padding:1rem;
+}
